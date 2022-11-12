@@ -382,104 +382,106 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1300px) {
-  .container-footer-top {
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-    color: white;
-    text-align: center;
-  }
-  
-  .container-logo {
-    background-color: black;
-    height: 200px;
-    width: 40%;
-  }
+@media screen and (max-width: 600px) {
 
-  footer {
-    padding: 50px 35px 20px 35px;
-  }
-
-  .footer-endereco {
-    width: 28%;
-    margin: 0;
-  }
-
-  .footer-funcionamento {
-    width: 60%;
-    text-align: center;
-  }
-  
-  .footer-funcionamento table {
-    width: 100%;
-    margin-top: 36px;
-    font-weight: 500;
-  }
-  
-  .footer-funcionamento table td, .footer-funcionamento table th {
-    padding: 5px;
-  }
-  
-  .footer-funcionamento table td {
-    font-size: 12px;
-  }
-  
-  .footer-funcionamento table th {
-    font-size: 14px;
-  }
-
-  .nav-links {
-    font-size: 25px;
-    margin: 100px 50px 0 0;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .container-logo {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 40%;
+  .container-produtos {
+    height: 450px;
+    justify-content: space-around;
   }
 
   .faca-seu-pedido, .faca-seu-pedido:visited {
-    background: none;
-    border-radius: 0;
-    padding: 15px 10px 15px 40px;
-    font-size: 25px;
-    color: #000000;
-    transition-duration: 0.6s;
-  }
-  
-  .faca-seu-pedido:hover {
-    background: url("./assets/fundo-facaseupedido.png") left center;
-    color: #FFFFFF;
+    background: #FBB005;
+    padding: 10px;
+    font-size: 18px;
   }
 
+  footer {
+    padding: 20px;
+  }
+
+  .footer-contato {
+    flex-basis: 45%;
+  }
+
+  .footer-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+  }
+
+  .footer-redes-sociais {
+    flex-basis: 100%;
+    margin: 15px 0;
+  }
+
+  .footer-termos {
+    flex-basis: 50%;
+  }
+
+  .google-play-btn {
+    width: 150px;
+  }
+  
   header {
-    height: 100px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
   }
 
   .logo-pontocom {
-    width: 110px;
-    height: 110px;
-    margin-left: 20px;
+    width: 120px;
+    height: 120px;
   }
 
-  .nav-links {
-    font-size: 15px;
-    margin: 0;
-    transition-duration: 0;
-    cursor: none;
+  nav {
+    justify-content: flex-end;
   }
 
-  .nav-links:nth-child(1) {
+  .nav-links, .nav-links:active, .nav-links:visited {
     display: none;
   }
+
+  .manual-btn {
+    display: none;
+  }
+
+  .navigation-auto {
+    display: none;
+  }
+
+  .produto {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .produto-imagem{
+    display: inline-block;
+    height: 100px;
+    width: 120px;
+  }
+  
+  .produto-nome {
+    margin-top: 5px;
+  }
+
+  .slider {
+    height: 300px;
+  }
+
+  .slides {
+    height: 300px;
+  }
+
 }
