@@ -382,7 +382,118 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+/* Respondividade Tablet */
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  
+  .container-produtos {
+    height: 650px;
+  }
+
+  .faca-seu-pedido, .faca-seu-pedido:visited {
+    background: #FBB005;
+    padding: 12px;
+    font-size: 24px;
+  }
+
+  footer {
+    padding: 35px;
+  }
+
+  .footer-contato {
+    flex-basis: 23%;
+    gap: 12px;
+  }
+
+  .footer-logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .footer-main {
+    flex-basis: 20%;
+  }
+
+  .footer-redes-sociais {
+    flex-basis: 50%;
+    margin: 0 10px;
+  }
+
+  .footer-termos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    flex-basis: 100%;
+  }
+  
+  .footer-termos div {
+    flex-direction: row;
+  }
+
+  .footer-termos-links {
+    margin: 0;
+  }
+
+  .google-play-btn {
+    width: 180px;
+  }
+
+  header {
+    padding: 0 30px;
+  }
+
+  .manual-btn {
+    display: none;
+  }
+
+  nav {
+    flex-basis: 70%;
+    justify-content: flex-end;
+  }
+  
+  .nav-links, .nav-links:active, .nav-links:visited {
+    display: none;
+  }
+
+  .navigation-auto {
+    display: none;
+  }
+
+  .logo-pontocom {
+    width: 180px;
+    height: 180px;
+  }
+
+  .produto {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .produto-imagem{
+    display: inline-block;
+    height: 200px;
+    width: 240px;
+  }
+  
+  .produto-nome {
+    margin-top: 5px;
+  }
+
+  .slider {
+    height: 500px;
+  }
+
+  .slides {
+    height: 500px;
+  }
+}
+
+/* Responsividade Celular */
+
+@media screen and (max-width: 767px) {
 
   .container-produtos {
     height: 450px;
@@ -392,7 +503,7 @@ nav {
   .faca-seu-pedido, .faca-seu-pedido:visited {
     background: #FBB005;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   footer {
@@ -413,6 +524,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     flex-basis: 100%;
   }
 
@@ -427,6 +539,7 @@ nav {
 
   .google-play-btn {
     width: 150px;
+    flex-basis: 50%;
   }
   
   header {
@@ -443,15 +556,15 @@ nav {
     height: 120px;
   }
 
+  .manual-btn {
+    display: none;
+  }
+
   nav {
     justify-content: flex-end;
   }
 
   .nav-links, .nav-links:active, .nav-links:visited {
-    display: none;
-  }
-
-  .manual-btn {
     display: none;
   }
 
