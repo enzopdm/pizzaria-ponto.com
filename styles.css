@@ -199,7 +199,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-basis: 80%;
 }
 
@@ -534,7 +534,7 @@ nav {
   
   .endereco h2 {
     font-size: 22px;
-    margin: 20px 0;
+    margin: 30px 0;
   }
 
   .faca-seu-pedido, .faca-seu-pedido:visited {
@@ -580,14 +580,14 @@ nav {
   .footer-termos div {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     flex-basis: 100%;
-    gap: 0;
+    gap: 20px;
   }
   
   .footer-termos-links {
     margin: 0;
+    font-size: 15px;
   }
 
   .footer-google-play-btn {
@@ -611,12 +611,12 @@ nav {
   }
   
   .funcionamento-title {
-    font-size: 17px;
+    font-size: 15px;
     gap: 5px;
   }
   
   .funcionamento-title svg {
-    width: 25px;
+    width: 24px;
   }
 
   header {
@@ -787,7 +787,7 @@ nav {
   
   .footer-termos div {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0;
     text-align: center;
   }
@@ -803,12 +803,12 @@ nav {
   }
 
   .funcionamento {
-    gap: 20px;
+    gap: 30px;
     flex-basis: 100%;
   }
   
   .funcionamento-date {
-    gap: 20px;
+    gap: 30px;
   }
   
   .funcionamento-date-day h4 {
