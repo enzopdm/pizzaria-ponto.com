@@ -19,6 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   flex-basis: 30%;
   gap: 30px;
   text-align: center;
@@ -38,7 +40,6 @@ body {
 
 .app-text a::before {
   content: '→  ';
-  text-decoration: none;
 }
 
 .app-text a:hover {
@@ -88,7 +89,7 @@ body {
 
 .direitos-reservados {
   width: 100%;
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
@@ -126,21 +127,21 @@ body {
 }
 
 .faca-seu-pedido, .faca-seu-pedido:visited {
-  background: url("./assets/fundo-facaseupedido.png") right center;
+  background: #FBB005;
   border-radius: 26px;
-  padding: 15px 10px 15px 40px;
+  padding: 10px 20px;
   font-size: 25px;
-  color: #000000;
-  transition-duration: 0.6s;
+  color: #000;
+  text-align: center;
+  transition-duration: 0.3s;
 }
 
 .faca-seu-pedido:hover {
-  background: url("./assets/fundo-facaseupedido.png") left center;
-  color: #FFFFFF;
+  background: rgb(251, 176, 5, 0.90);
 }
 
 footer {
-  background: #000000;
+  background: #000;
   color: #FFF;
   padding: 50px;
   padding-bottom: 20px;
@@ -190,20 +191,20 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   flex-basis: 20%;
 }
 
 .footer-termos div {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  justify-content: space-around;
   flex-basis: 80%;
-  gap: 10px;
 }
 
 .footer-termos-links {
   color: #FFF;
-  margin: 0 0 15px 30px;
 }
 
 .footer-titulos {
@@ -251,10 +252,6 @@ footer {
   gap: 10px;
 }
 
-.funcionamento-title::before {
-  content: '';
-}
-
 .funcionamento-title svg {
   width: 35px;
 }
@@ -268,7 +265,7 @@ footer {
 }
 
 header {
-  height: 200px;
+  height: 150px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -335,7 +332,7 @@ header {
   height: 30px;
   background: #FBB005;
   border-radius: 7px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
@@ -350,8 +347,12 @@ header {
   width: 70px;
 }
 
+.logo-pontocom {
+  width: 150px;
+}
+
 .main-google-play-btn {
-  width: 50%;
+  width: 180px;
 }
 
 .manual-btn {
@@ -380,7 +381,7 @@ header {
 
 nav {
   height: 100%;
-  flex-basis: 60%;
+  flex-basis: 50%;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -389,7 +390,7 @@ nav {
 
 .nav-links, .nav-links:active, .nav-links:visited {
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   transition-duration: 0.5s;
 }
 
@@ -504,16 +505,47 @@ nav {
 
 /* Respondividade Tablet */
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1300px) {
+
+  .app-text a {
+    font-size: 12px;
+  }
+  
+  .app-text h1 {
+    font-size: 36px;
+  }
+  
+  .app-text h2 {
+    font-size: 22px;
+    margin: 20px 0;
+  }
   
   .container-produtos {
     height: 650px;
+  }
+
+  .endereco a {
+    font-size: 18px;
+  }
+  
+  .endereco h1 {
+    font-size: 36px;
+  }
+  
+  .endereco h2 {
+    font-size: 22px;
+    margin: 20px 0;
   }
 
   .faca-seu-pedido, .faca-seu-pedido:visited {
     background: #FBB005;
     padding: 12px;
     font-size: 24px;
+  }
+
+  .faca-seu-pedido:hover {
+    background: rgb(251, 176, 5, 0.85);
+    color: #000;
   }
 
   footer {
@@ -540,23 +572,51 @@ nav {
   }
 
   .footer-termos {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
     flex-basis: 100%;
+    gap: 30px;
   }
   
   .footer-termos div {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+    gap: 0;
   }
-
+  
   .footer-termos-links {
     margin: 0;
   }
 
   .footer-google-play-btn {
     width: 180px;
+  }
+
+  .funcionamento {
+    gap: 30px;
+  }
+  
+  .funcionamento-date {
+    gap: 30px;
+  }
+  
+  .funcionamento-date-day h4 {
+    font-size: 20px;
+  }
+  
+  .funcionamento-date-day p {
+    font-size: 16px;
+  }
+  
+  .funcionamento-title {
+    font-size: 17px;
+    gap: 5px;
+  }
+  
+  .funcionamento-title svg {
+    width: 25px;
   }
 
   header {
@@ -615,9 +675,72 @@ nav {
 
 @media screen and (max-width: 767px) {
 
+  .app-assets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 10px;
+  }
+
+  .app-assets svg {
+    display: none;
+  }
+
+  .app-text {
+    flex-basis: 100%;
+  }
+  
+  .app-text a {
+    font-size: 12px;
+  }
+  
+  .app-text h1 {
+    font-size: 30px;
+  }
+  
+  .app-text h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .container-app {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-inform {
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px;
+  }
+
   .container-produtos {
     height: 450px;
     justify-content: space-around;
+  }
+
+  .endereco {
+    flex-basis: 100%;
+  }
+  
+  .endereco a {
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  
+  .endereco h1 {
+    font-size: 30px;
+  }
+  
+  .endereco h2 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .endereco-links {
+    text-align: center;
   }
 
   .faca-seu-pedido, .faca-seu-pedido:visited {
@@ -626,12 +749,17 @@ nav {
     font-size: 14px;
   }
 
+  .faca-seu-pedido:hover {
+    background: rgb(251, 176, 5, 0.85);
+    color: #000;
+  }
+
   footer {
     padding: 20px;
   }
 
   .footer-contato {
-    flex-basis: 45%;
+    flex-basis: 50%;
   }
 
   .footer-logo {
@@ -656,10 +784,49 @@ nav {
   .footer-termos {
     flex-basis: 50%;
   }
+  
+  .footer-termos div {
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+    text-align: center;
+  }
+  
+  .footer-termos-links {
+    margin: 0;
+  }
+  
 
   .footer-google-play-btn {
     width: 150px;
     flex-basis: 50%;
+  }
+
+  .funcionamento {
+    gap: 20px;
+    flex-basis: 100%;
+  }
+  
+  .funcionamento-date {
+    gap: 20px;
+  }
+  
+  .funcionamento-date-day h4 {
+    font-size: 18px;
+  }
+  
+  .funcionamento-date-day p {
+    font-size: 16px;
+  }
+  
+  .funcionamento-title {
+    font-size: 14px;
+    justify-content: left;
+    gap: 5px;
+  }
+  
+  .funcionamento-title svg {
+    width: 20px;
   }
   
   header {
@@ -674,6 +841,10 @@ nav {
   .logo-pontocom {
     width: 120px;
     height: 120px;
+  }
+
+  .main-google-play-btn {
+    width: 160px;
   }
 
   .manual-btn {
