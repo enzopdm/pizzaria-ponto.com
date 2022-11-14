@@ -15,23 +15,61 @@ body {
   width: 100%;
 }
 
-.app-btn {
-  width: 150px;
-}
-
-.container-footer-bottom {
+.app-assets {
   display: flex;
-  justify-content: space-evenly;
-  color: white;
-  text-align: center;
-}
-
-.container-footer-top {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  color: white;
+  flex-basis: 30%;
+  gap: 30px;
   text-align: center;
+}
+
+.app-text {
+  flex-basis: 70%;
+}
+
+.app-text a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: padding-left 0.3s;
+}
+
+.app-text a::before {
+  content: '→  ';
+  text-decoration: none;
+}
+
+.app-text a:hover {
+  padding-left: 5px;
+}
+
+.app-text h1 {
+  font-size: 48px;
+}
+
+.app-text h2 {
+  font-weight: 400;
+  font-size: 36px;
+  margin: 30px 0;
+}
+
+.coins {
+  width: 40%;
+}
+
+.container-app {
+  background-color: #FBB005;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.container-inform {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
 .container-produtos {
@@ -55,6 +93,36 @@ body {
   font-weight: 500;
   text-align: center;
   margin-top: 70px;
+}
+
+.endereco {
+  flex-basis: 50%;
+}
+
+.endereco a {
+  background: #FBB005;
+  color: #000;
+  padding: 5px 10px;
+  margin-right: 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.endereco a:hover {
+  background:rgb(251, 176, 5, 0.85);
+}
+
+.endereco h1 {
+  color: #FBB005;
+  font-size: 48px;
+}
+
+.endereco h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 30px 0;
 }
 
 .faca-seu-pedido, .faca-seu-pedido:visited {
@@ -147,8 +215,56 @@ footer {
   width: 100%;
 }
 
-.google-play-btn {
+.footer-google-play-btn {
   width: 200px;
+}
+
+.funcionamento {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-basis: 50%;
+}
+
+.funcionamento-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.funcionamento-date-day h4 {
+  font-size: 24px;
+}
+
+.funcionamento-date-day p {
+  font-size: 20px;
+}
+
+.funcionamento-title {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.funcionamento-title::before {
+  content: '';
+}
+
+.funcionamento-title svg {
+  width: 35px;
+}
+
+.google-play-btn {
+  transition: transform 0.3s;
+}
+
+.google-play-btn:hover {
+  transform: scale(1.03);
 }
 
 header {
@@ -232,6 +348,10 @@ header {
 
 .link-maps-rotas {
   width: 70px;
+}
+
+.main-google-play-btn {
+  width: 50%;
 }
 
 .manual-btn {
@@ -435,7 +555,7 @@ nav {
     margin: 0;
   }
 
-  .google-play-btn {
+  .footer-google-play-btn {
     width: 180px;
   }
 
@@ -537,7 +657,7 @@ nav {
     flex-basis: 50%;
   }
 
-  .google-play-btn {
+  .footer-google-play-btn {
     width: 150px;
     flex-basis: 50%;
   }
