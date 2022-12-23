@@ -75,7 +75,6 @@ body {
 
 .container-produtos {
   height: 438px;
-  box-shadow: 0 15px 10px #949494;
   display: flex;
   align-items: center;
   justify-content: space-around;
